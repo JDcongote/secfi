@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "es2015",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@services/*": ["./src/app/services/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@styles/*": ["./src/app/common-styles/*"],
+      "@assets/*": ["./src/app/assets/*"]
+    }
+  },
+  "include": ["src/**/*", "src/app/services/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
